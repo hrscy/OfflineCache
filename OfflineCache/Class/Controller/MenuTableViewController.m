@@ -12,6 +12,7 @@
 #import "SQLiteManager.h"
 #import "Menu.h"
 #import "MenuCell.h"
+#import "NSString+Extension.h"
 
 @interface MenuTableViewController () <UIAlertViewDelegate>
 
@@ -32,6 +33,8 @@
     
     //获取服务器数据
     [self getData];
+    //文件操作
+    [self fileOpreation];
 }
 
 #pragma mark 右上角清理缓存按钮
@@ -42,6 +45,13 @@
 
 #pragma amrk 点击清理缓存按钮
 -(void)barButtonItemClick {
+    //方法1.文件操作获取缓存大小
+    //缓存路径
+//    NSString *caches = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+    //获取缓存大小
+//    [caches cachesFileSize];
+    
+    //方法2.使用SDImageCache获取缓存文件大小
     //字节大小
     int byteSize = (int)[SDImageCache sharedImageCache].getSize;
     //M大小
@@ -56,6 +66,14 @@
         //清除缓存
         [[SDImageCache sharedImageCache] clearDisk];
     }
+}
+
+#pragma mark 文件操作
+-(void)fileOpreation {
+    //缓存路径
+    NSString *caches = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+    //获取缓存大小
+    [caches cachesFileSize];
 }
 
 #pragma amrk 获取服务器数据

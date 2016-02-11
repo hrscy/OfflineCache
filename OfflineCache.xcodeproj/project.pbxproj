@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9437B35C1C6CD090006ABC99 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9437B35B1C6CD090006ABC99 /* NSString+Extension.m */; };
 		944368D31C6B2D9C00FDB362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944368D11C6B2D9C00FDB362 /* Main.storyboard */; };
 		944368D51C6B2D9C00FDB362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944368D41C6B2D9C00FDB362 /* Assets.xcassets */; };
 		944368D81C6B2D9C00FDB362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944368D61C6B2D9C00FDB362 /* LaunchScreen.storyboard */; };
@@ -51,6 +52,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9437B35A1C6CD090006ABC99 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		9437B35B1C6CD090006ABC99 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		944368C51C6B2D9C00FDB362 /* OfflineCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfflineCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		944368D21C6B2D9C00FDB362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		944368D41C6B2D9C00FDB362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -299,6 +302,8 @@
 				944369551C6B375400FDB362 /* AppDelegate.h */,
 				944369561C6B375400FDB362 /* AppDelegate.m */,
 				944369581C6B375400FDB362 /* main.m */,
+				9437B35A1C6CD090006ABC99 /* NSString+Extension.h */,
+				9437B35B1C6CD090006ABC99 /* NSString+Extension.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -424,6 +429,7 @@
 				9443698D1C6B51DA00FDB362 /* MenuTableViewController.m in Sources */,
 				944369771C6B375400FDB362 /* AppDelegate.m in Sources */,
 				944369681C6B375400FDB362 /* NSData+ImageContentType.m in Sources */,
+				9437B35C1C6CD090006ABC99 /* NSString+Extension.m in Sources */,
 				944369981C6B603B00FDB362 /* MenuCell.m in Sources */,
 				9443695F1C6B375400FDB362 /* AFURLResponseSerialization.m in Sources */,
 				9443696E1C6B375400FDB362 /* SDWebImageManager.m in Sources */,
